@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<title>RM1 Campaign Program</title>
+</head>
+<body>
+    
+<!--Navigation Bar-->
+<div class="navbar">
+        <nav>
+            <div class ="logo">
+                <img src="logo.png" alt="logo" width="80"/>
+            </div>
+            
+            <h1 id="logoname">IIUM Endowment Fund</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#form">Forms</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+</div>
+
+<!--Home page-->
+<div class="container">
+    
+<section class="home">
+    <h1 id="title">RM1 
+        PROGRAM CAMPAIGN</h1>
+    <hr>
+    <h3 id="tagline">Let your contributions be perpetual for the pleasure of Allah SWT</h3>
+    <br>
+    <p id="verse">“The example of those who spend their wealth in the 
+        way of Allah is like a seed [of grain] which grows seven 
+        spikes; in each spike is a hundred grains. And Allah 
+        multiplies [His reward] for whom He wills. And Allah is 
+        all-Encompassing and Knowing.”
+        Al Baqarah:261
+    </p>
+    <img src="CAMPAIGN POSTER.jpg"alt="poster" id="poster"/>
+</section>
+
+<!--Deduction Form-->
+<section id="form">
+    <h2 id>Monthly Salary Deduction</h2>
+    <p  id="caption">Please enter your details below to complete the form.</p>
+    <form id="deduction-form">
+        <h4>PARTICIPATION IN RM1 CAMPAIGN—MONTHLY SALARY DEDUCTION</h4>
+        
+        <label for ="name">Name :</label>
+        <input type ="text" id ="name" name="name" placeholder="e.g Michael Jackson">
+        <br>
+        <label for ="staffno">Staff No :</label>
+        <input type="text" id="staffno" name="staffno" placeholder="222456" required>
+        <br>
+
+        <label for ="kcdio">K/C/D/I/O :</label>
+        <input type ="text" id ="kcdio" name="kcdio" placeholder="Kulliyah/Centre" required>
+        <br>
+        <label for ="contactno">Contact No :</label>
+        <input type="text" id="contactno" name="contactno" placeholder="012-3337654" required>
+        <br>
+        <label for ="email">Email :</label>
+        <input type="text" id="email" name="email" placeholder="e.g@gmail.com" required>
+        <br>
+        <label for ="amountDeduct">Amount to be Deducted (in RM) :</label>
+        <input type="text" id="amountDeduct" name="amountDeduct" placeholder="RMX" required>
+        <br>
+        <label id="formInput">The above salary deduction will taken effect from 
+            <select id="fromMonth" required>
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+
+            <select id="year"></select> until
+                <select id="untilMonth" required>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+                
+            <select id="untilYear"></select>or further notice</label>
+  
+        <div class="button-container">
+            <button type="submit" id="submitButton" onclick="submitForm()">Submit</button>
+        </div>
+    </form>
+</section>
+
+<!--Contact-->
+<footer id="contact">
+    <div class="footer-front-content">
+        <h3>One Ringgit at a Time - Together to make a difference</h3>
+    </div>
+    <div class="footer-middle-content">
+        <h3>Contact Us</h3>
+        <p id="contact-address">Address : </p>
+        <p>IIUM Endowment Fund</p>
+        <p>Level 3, Rectory International Islamic University Malaysia</p>
+        <p>P.O. Box 10</p>
+        <p>50728 Kuala Lumpur</p>
+    </div>
+    <div class="footer-back-content">
+        <p>Tel : 03 6196 4268</p>
+        <p>Email : IEF@IIUM.EDU.MY </p>
+        <p>Website :<a href="https://division.iium.edu.my/ief/"> IIUM IEF</a></p>
+        <p>Facebook : IEF.OFFICIAL</p>
+    </div>
+</footer>
+<script src="features.js"></script>
+</body>
+</html>
